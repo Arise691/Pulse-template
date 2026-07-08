@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PULSE — Creative Studio Landing Page Template</title>
+<meta name="description" content="Template landing page agensi kreatif dengan animasi penuh — scroll parallax, teks kinetik, kursor custom, dan efek klik interaktif.">
+<meta name="theme-color" content="#08090a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PULSE — Creative Studio Landing Page Template">
+<meta property="og:description" content="Template landing page agensi kreatif penuh animasi — scroll parallax, teks kinetik, kursor custom.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+  <div class="load-mark">PULSE</div>
+  <div class="load-bar"><span id="loadBar"></span></div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#top" class="brand ripple-el">PULSE</a>
+    <nav class="nav-links">
+      <a href="#karya" class="ripple-el">Karya</a>
+      <a href="#layanan" class="ripple-el">Layanan</a>
+      <a href="#statistik" class="ripple-el">Statistik</a>
+      <a href="#kontak" class="ripple-el">Kontak</a>
+    </nav>
+    <a href="#kontak" class="btn btn-primary magnetic ripple-el">Mulai Proyek</a>
+    <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob blob-1" data-parallax="0.15"></div>
+    <div class="hero-blob blob-2" data-parallax="0.28"></div>
+    <div class="hero-blob blob-3" data-parallax="0.1"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow kinetic-line" data-delay="0">STUDIO DESAIN & MOTION</p>
+      <h1 class="kinetic-headline">
+        <span class="kinetic-word" data-delay="1">KAMI</span>
+        <span class="kinetic-word" data-delay="2">BIKIN</span>
+        <span class="kinetic-word accent" data-delay="3">BRAND-MU</span><br>
+        <span class="kinetic-word" data-delay="4">BERGERAK.</span>
+      </h1>
+      <p class="hero-sub kinetic-line" data-delay="5">Landing page dengan animasi penuh — tiap scroll, tiap klik, semuanya terasa hidup. Dibangun murni HTML, CSS, dan JavaScript.</p>
+      <div class="hero-actions kinetic-line" data-delay="6">
+        <a href="#karya" class="btn btn-primary btn-lg magnetic ripple-el">Lihat Karya</a>
+        <a href="#kontak" class="btn btn-outline btn-lg magnetic ripple-el">Mulai Proyek</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>MOTION DESIGN</span><span>•</span><span>BRAND IDENTITY</span><span>•</span>
+      <span>WEB EXPERIENCE</span><span>•</span><span>INTERAKTIF</span><span>•</span>
+      <span>MOTION DESIGN</span><span>•</span><span>BRAND IDENTITY</span><span>•</span>
+      <span>WEB EXPERIENCE</span><span>•</span><span>INTERAKTIF</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- LAYANAN -->
+  <section class="section" id="layanan">
+    <div class="container">
+      <p class="eyebrow stagger-parent">Layanan</p>
+      <h2 class="stagger-parent">Semua yang brand-mu butuhkan buat tampil beda.</h2>
+      <div class="service-grid">
+        <article class="service-card stagger-item ripple-el" style="--i:0">
+          <span class="service-num">01</span>
+          <h3>Motion Design</h3>
+          <p>Animasi yang bikin visitor betah scroll sampai bawah, bukan cuma lewat.</p>
+        </article>
+        <article class="service-card stagger-item ripple-el" style="--i:1">
+          <span class="service-num">02</span>
+          <h3>Brand Identity</h3>
+          <p>Identitas visual yang konsisten dari logo sampai microinteraction.</p>
+        </article>
+        <article class="service-card stagger-item ripple-el" style="--i:2">
+          <span class="service-num">03</span>
+          <h3>Web Experience</h3>
+          <p>Landing page cepat, ringan, dan interaktif tanpa framework berat.</p>
+        </article>
+        <article class="service-card stagger-item ripple-el" style="--i:3">
+          <span class="service-num">04</span>
+          <h3>Konsultasi</h3>
+          <p>Bantuin nentuin arah desain yang paling pas buat audiensmu.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- KARYA - horizontal scroll gallery -->
+  <section class="section section-alt" id="karya">
+    <div class="container">
+      <p class="eyebrow stagger-parent">Karya Terpilih</p>
+      <h2 class="stagger-parent">Geser buat lihat semuanya.</h2>
+    </div>
+    <div class="gallery-scroll" id="galleryScroll">
+      <div class="gallery-track" id="galleryTrack">
+        <article class="gallery-card ripple-el" style="--g1:#d4ff3f;--g2:#7a9e1f"><span class="gallery-tag">Brand</span><h3>Nova Retail</h3></article>
+        <article class="gallery-card ripple-el" style="--g1:#ff3fa4;--g2:#8a1f5e"><span class="gallery-tag">Motion</span><h3>Kinetic Studio</h3></article>
+        <article class="gallery-card ripple-el" style="--g1:#3fb8ff;--g2:#1f5e8a"><span class="gallery-tag">Web</span><h3>Arus Digital</h3></article>
+        <article class="gallery-card ripple-el" style="--g1:#ffb83f;--g2:#8a5e1f"><span class="gallery-tag">Brand</span><h3>Solstice Co.</h3></article>
+        <article class="gallery-card ripple-el" style="--g1:#d4ff3f;--g2:#3fb8ff"><span class="gallery-tag">Web</span><h3>Fragmen Lab</h3></article>
+      </div>
+    </div>
+    <div class="gallery-dots" id="galleryDots" aria-hidden="true"></div>
+  </section>
+
+  <!-- STATISTIK -->
+  <section class="section" id="statistik">
+    <div class="container stats-grid">
+      <div class="stat-item stagger-item" style="--i:0"><span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span><p>Proyek Selesai</p></div>
+      <div class="stat-item stagger-item" style="--i:1"><span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span><p>Klien Puas</p></div>
+      <div class="stat-item stagger-item" style="--i:2"><span class="stat-num" data-count="4">0</span><span class="stat-plus">.9</span><p>Rating Rata-rata</p></div>
+      <div class="stat-item stagger-item" style="--i:3"><span class="stat-num" data-count="30">0</span><span class="stat-plus">+</span><p>Klien Aktif</p></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="section section-alt" id="testimoni">
+    <div class="container testi-wrap">
+      <div class="testi-track" id="testiTrack">
+        <blockquote class="testi-item active">
+          <p>"Tiap kali klien buka website-nya, reaksinya selalu 'wah'. Itu yang kami cari."</p>
+          <span>— Rani, Nova Retail</span>
+        </blockquote>
+        <blockquote class="testi-item">
+          <p>"Animasinya halus banget, nggak norak, tetep kerasa premium."</p>
+          <span>— Dimas, Kinetic Studio</span>
+        </blockquote>
+        <blockquote class="testi-item">
+          <p>"Proses kerjanya cepat, hasilnya jauh di atas ekspektasi."</p>
+          <span>— Salma, Arus Digital</span>
+        </blockquote>
+      </div>
+      <div class="testi-dots" id="testiDots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- CTA / KONTAK -->
+  <section class="section cta-section" id="kontak">
+    <div class="container cta-inner">
+      <p class="eyebrow stagger-parent">Mulai Proyek</p>
+      <h2 class="cta-headline stagger-parent">Siap bikin brand-mu<br>terasa hidup?</h2>
+      <a href="https://wa.me/6285624396423?text=Halo%20PULSE%2C%20saya%20mau%20diskusi%20proyek" class="btn btn-primary btn-xl magnetic ripple-el stagger-item" style="--i:0" target="_blank" rel="noopener">Chat via WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="brand">PULSE</span>
+    <span>© <span id="year"></span> PULSE Studio Template</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
